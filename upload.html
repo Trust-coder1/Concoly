@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <style>
+    body{
+    width:100%;
+    height:100vh;
+    background: #EFF3F8;
+    }
+    .container{
+    width:100%;
+    height:100vh;
+    background: #EFF3F8;
+}
+.container .top{
+    width:100%;
+    height: 130px;
+    border-radius: 0px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+}
+.top .zuruck{
+    width: 100px;
+    
+    margin:20px 0 0 70px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 48px;
+   
+    
+    
+    /* Primary/60* */
+
+    
+    color: #7D7AFF;
+    
+}
+.title{
+    margin-right:43%;
+    margin-top: 40px;
+    font-family: 'Inter';
+}
+.top-list{
+    margin-left: 60px;
+}
+.same{
+    /* margin-bottom: 20px; */
+    width:350px;
+    height:50px;
+    border-radius:7px;
+    border:0px;
+    margin: 50px 0 0 30px;
+    padding-left: 10px;
+}
+.first{
+    /* margin-left: 50px; */
+    width:250px;
+    margin: 50px 0 0 30px;
+    border-radius:7px;
+    border:0px;
+    padding-left: 10px;
+}
+
+.top-list .second{
+    width:200px;
+    margin: 50px 0 0 30px;
+    border-radius:7px;
+    border:0px;
+    padding-left: 10px;
+}
+.work{
+    width:86.5%;
+    height:50px;
+    margin: 50px 0 0 90px;
+    border-radius:7px;
+    border:0px;
+    padding: 0 0 200px 5px;
+
+}
+.upload-files{
+    width:86.5%;
+    height:350px;
+    background-color: #fff;
+    margin: 50px 0 0 90px;
+    border-radius:7px;
+    border:0px;
+   
+}
+.upload-files p span{
+    color:#483EA8;
+    text-decoration: underline;
+}
+.continue{
+    width:250px;
+    height:65px;
+    background-color: #7D7AFF;
+    border:0px;
+    border-radius:7px;
+    margin: 50px 0 50px 40%;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+.drag{
+    font-weight: 600;
+    position: absolute;
+    top:130%;
+    left:42%;
+}
+.upload-icon{
+    margin: 70px 0 0 46.5%;
+}
+.supported{
+    font-weight: 600;
+    position: absolute;
+    top:140%;
+    left:33%;
+    color:#676767;
+}
+#upload{
+    margin: 60px 0 0 41.5%;
+    border:none;
+    width:250x;
+    height:150px;
+    background-color: #fff;
+}
+    </style>
+</head>
+<body>
+    <!-- Kenneth -->
+    <div class="container">
+        <div class="top">
+            <h4 class="zuruck"> <u>Zuruck</u></h4>
+            <h2 class="title">Projektupload</h2>
+        
+        </div>
+        <div class="content">
+            <div class="top-list">
+                <input type="text" placeholder="Projekttitel" class="same" >
+                <input type="text" placeholder="Tech Steck"  class="same" class="first">
+                <input type="date" placeholder="dd/mm/jjj" class="same" class="second">
+            </div>
+        
+            <br>
+            <input type="text"  placeholder="Informationen" class="work">
+            <br>
+            <div class="upload-files">
+                <button id="upload" onclick="importData()">
+                    <svg  class="upload-icon" width="92" height="72" viewBox="0 0 140 122" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M73.0023 30.3777L72.9101 30.3502C72.0476 30.093 71.5561 29.1861 71.8135 28.3232C74.5528 19.1179 83.0843 12.3588 93.2362 12.3588C94.1362 12.3588 94.8662 13.0887 94.8662 13.9887C94.8662 14.8887 94.1362 15.6186 93.2362 15.6186C84.8514 15.6186 77.3263 21.2251 74.9373 29.2521L73.0023 30.3777ZM73.0023 30.3777L73.0046 30.3752M73.0023 30.3777L73.0046 30.3752M73.0046 30.3752C73.8412 30.5722 74.6915 30.0824 74.9373 29.2523L73.0046 30.3752Z" fill="#483EA8" stroke="#F9FFF9" stroke-width="0.3"/>
+                        <path d="M113.954 86.5046H105.074C104.257 86.5046 103.595 85.8418 103.595 85.0247C103.595 84.2076 104.257 83.5447 105.074 83.5447H113.954C126.194 83.5447 136.152 73.586 136.152 61.3462C136.152 49.1064 126.194 39.1476 113.954 39.1476H113.74C113.311 39.1476 112.903 38.9616 112.622 38.6371C112.341 38.3126 112.214 37.8823 112.275 37.4574C112.407 36.5356 112.474 35.6096 112.474 34.708C112.474 24.1003 103.843 15.4691 93.235 15.4691C89.1082 15.4691 85.1727 16.7587 81.8533 19.1995C81.124 19.7354 80.0881 19.4976 79.6663 18.6952C70.2658 0.794812 45.7126 -1.60903 32.983 13.9628C27.6206 20.523 25.5136 29.0567 27.202 37.3739C27.388 38.2925 26.685 39.1488 25.7516 39.1488H25.1586C12.9189 39.1488 2.96007 49.1076 2.96007 61.3473C2.96007 73.5871 12.9189 83.5459 25.1586 83.5459H34.0379C34.855 83.5459 35.5179 84.2087 35.5179 85.0258C35.5179 85.8429 34.8551 86.5057 34.0379 86.5057H25.1586C11.2865 86.5057 0.00012207 75.2193 0.00012207 61.3472C0.00012207 47.8643 10.6617 36.8241 23.9969 36.2152C22.7443 27.5862 25.1396 18.8823 30.6913 12.0897C44.3201 -4.58354 70.4387 -2.7147 81.4797 15.8771C85.002 13.6689 89.0325 12.5105 93.2345 12.5105C106.086 12.5105 116.27 23.4491 115.379 36.229C128.592 36.9701 139.112 47.9519 139.112 61.3461C139.112 75.2193 127.825 86.5046 113.953 86.5046L113.954 86.5046Z" fill="#483EA8"/>
+                        <path d="M32.2097 84.189C32.2097 104.673 48.8743 121.337 69.3577 121.337C89.8414 121.337 106.506 104.672 106.506 84.189C106.506 63.7052 89.8414 47.0409 69.3577 47.0409C48.874 47.0409 32.2097 63.7055 32.2097 84.189ZM35.4702 84.189C35.4702 65.5038 50.6723 50.3014 69.3577 50.3014C88.0429 50.3014 103.245 65.5035 103.245 84.189C103.245 102.874 88.0429 118.077 69.3577 118.077C50.6725 118.077 35.4702 102.874 35.4702 84.189Z" fill="#483EA8" stroke="#F9FFF9" stroke-width="0.3"/>
+                        <path d="M68.8006 99.083C68.8006 99.764 69.353 100.316 70.0341 100.316C70.7151 100.316 71.2676 99.7649 71.2676 99.083V70.9128C71.2676 70.2317 70.7152 69.6793 70.0341 69.6793C69.353 69.6793 68.8006 70.2318 68.8006 70.9128V99.083Z" fill="#483EA8" stroke="#483EA8" stroke-width="0.3"/>
+                        <path d="M70.034 72.6598L77.8294 80.4552C78.0699 80.6958 78.3864 80.8165 78.7015 80.8165L70.034 72.6598ZM70.034 72.6598L62.2387 80.4551C61.7575 80.9372 60.976 80.9371 60.4941 80.4552C60.0122 79.9733 60.0122 79.1927 60.4941 78.7108L69.1616 70.0433C69.6428 69.5612 70.4243 69.5614 70.9062 70.0432L79.5738 78.7108C80.0556 79.1926 80.0557 79.9731 79.574 80.455C79.3332 80.6967 79.0165 80.8165 78.7016 80.8165L70.034 72.6598Z" fill="#483EA8" stroke="#483EA8" stroke-width="0.3"/>
+                        </svg>
+                </button>
+                
+                    
+                <p class="drag">Drag & Drop files or  <span>Browse</span></p>
+                <small class="supported">Supported formates: JPEG, PNG, GIF, MP4, PDF, PSD, AI, WORD,PPT</small>
+            </div>
+            <button class="continue">Continue</button>
+        </div>
+    </div>
+    <script>
+    //     export default function App() {
+    //     const fileRef = React.useRef();
+    //     let [file, setFile] = React.useState();
+    //     const handleChange = (event) => {
+    //       setFile(event.target.files[0]);
+    //     };
+      
+    //     return (
+    //       <div>
+    //         <button onClick={() => fileRef.current.click()}>
+    //           <input id="upload" name="upload" type="file" ref={fileRef} hidden
+    //             onChange={handleChange} />
+    //           Upload File
+    //         </button>
+    //         { file &&  file!==undefined && file!==null &&
+    //           <div>
+    //             <p>{file.name}</p>
+    //             <p>{file.size}</p>
+    //             <p>{file.type}</p>
+    //           </div>
+    //         }    
+    //       </div>
+    //     );
+    //   }
+
+    
+    function importData(){
+        let input = document.createElement('input')
+        input.type ='file';
+        input.onchange = _ => {
+    // you can use this method to get file and perform respective operations
+            let files =   Array.from(input.files);
+            console.log(files);
+        };
+  input.click();
+    }
+   
+    </script>
+    
+</body>
+</html>
