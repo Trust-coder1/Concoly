@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <title>Registration
+    </title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* form styling */
+.form{
+    width:100%;
+    height: 100vh;
+    background-color: #EAEEF4;
+    padding-left: 35%;
+    padding-top: 5%;
+    /* display: flex;
+    align-items: center; */
+
+}
+.form .form-header{
+    width: 324px;
+height: 64px;
+margin-left: 20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 38px;
+line-height: 30px;
+margin-bottom: 25px;
+/* or 67% */
+
+text-align: center;
+letter-spacing: -0.022em;
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+border: 0;
+flex-grow: 0;
+
+}
+
+.form .form-text{
+   font-weight: 500;
+   color:gray;
+   margin-bottom:15px;
+   line-height: 26px;
+
+}
+.form-text span{
+    margin-left: 20px;
+}
+.password, .con-password{
+    margin-bottom: 20px;
+    width:350px;
+    height:50px;
+    border-radius:7px;
+    border:0px;
+    padding-left: 10px;
+}
+.check{
+    display:flex;
+    justify-content: flex-start;
+    color:#000;
+    margin:10px 0 75px 110px;
+    border:0px;
+}
+.check p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 13px;
+}
+.checkbox{
+    margin-right:15px;
+    width:30px;
+    height:30px;
+    border:0px;
+    background-color: #fff;
+}
+#register{
+    width:350px;
+    height:45px;
+    background-color: #7D7AFF;
+    border:0px;
+    border-radius:7px;
+    cursor:pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h3 class="form-header">Nur noch der letzte Schritt</h3>
+        <br>
+        <p class="form-text">Gib jetzt nur noch dein benutzerdefiniertes <br> <span> Passwort ein und dann geht’s los!</span></p>
+        <br>
+        <input type="password" name="" value="" id="pass" placeholder="Password" class="password" required>
+        <br>
+        <input type="password" placeholder="Confirm Password" id="con" class="con-password" required>
+        <br>
+        <div class="check"><input type="checkbox" class="checkbox"> <p>Ich akzeptieren die AGB 
+            und <br> <u> <span>Datenschutzerklärung.</span> </u></p></div>
+        
+        <br>
+        <button id="register">Register</button>
+    </div>
+    <script>
+        const register = document.getElementById("register")
+        const pass = document.getElementById("pass")
+        const con = document.getElementById("con")
+        function work(){
+        //     if (pass.value="") {
+        //     alert("Pls input password");
+        // }
+        // else if(con.value=""){
+        //     alert("Pls input password");
+        // }
+        
+            register.addEventListener("click", () =>{
+                window.location.href="chatbox.html";
+            })
+        
+        }
+        
+        work();
+
+                
+    </script>
+</body>
+</html>
