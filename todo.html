@@ -39,7 +39,7 @@ body{
     padding: 4px 0 0 0px;
     
 }
-.top .zuruck{
+.top #zuruck{
     width: 100px;
     
     margin:20px 0 0 70px;
@@ -118,7 +118,7 @@ body{
 <body>
     <div class="container">
         <div class="top">
-            <h4 class="zuruck"> <u>Zuruck</u></h4>
+            <h4 id="zuruck" onclick="run"> <u>Zuruck</u></h4>
             <h2 class="title">Projekttitel</h2>
             <div class="top2">
                 <button id="switch1">Chat</button>
@@ -133,8 +133,14 @@ body{
             <button class="backend">Backend</button>
         </div>
         <script>
+            const zuruck = document.getElementById("zuruck")
             const swicth1 = document.getElementById("switch1");
             const swicth2 = document.getElementById("switch2");
+
+                zuruck.addEventListener("click", () =>{
+            window.location.href="chatbox.html";
+                })
+            
             swicth1.addEventListener("click", () =>{
                 window.location.href="chatbox.html";
             })
