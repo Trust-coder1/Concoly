@@ -41,7 +41,7 @@ body{
     padding: 4px 0 0 0px;
     
 }
-.top .zuruck{
+.top #zuruck{
     width: 100px;
     
     margin:20px 0 0 70px;
@@ -76,13 +76,14 @@ body{
     cursor: pointer;
 }
 #switch2{
-    color:#000;
+    color: #838D95;
+    text-align: center;
     border:none;
     background-color: #EFF3F8;
     border-radius: 6px;
     width:20px;
     height:30px;
-    margin-left: 12px;
+    margin-left: 15px;
     cursor: pointer;
     
    
@@ -173,7 +174,7 @@ word-spacing: 0.5em;
 <body>
     <div class="container">
         <div class="top">
-            <h4 class="zuruck"> <u>Zuruck</u></h4>
+            <h4 id="zuruck"> <u>Zuruck</u></h4>
             <h2 class="title">Projekttitel</h2>
             <div class="top2">
                 <button id="switch1">Chat</button>
@@ -265,5 +266,20 @@ word-spacing: 0.5em;
         </div>
         
     </div>
+    <script>
+        const swicth1 = document.getElementById("switch1");
+        const swicth2 = document.getElementById("switch2");
+        const zuruck = document.getElementById("zuruck")
+        zuruck.addEventListener("click", () =>{
+            window.location.href="registration1.html";
+                })
+            
+            swicth1.addEventListener("click", () =>{
+                window.location.href="chatbox.html";
+            })
+        swicth2.addEventListener("click", () =>{
+            window.location.href="todo.html";
+        })
+    </script>
 </body>
 </html>
