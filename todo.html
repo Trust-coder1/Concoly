@@ -105,13 +105,14 @@ body{
     color:#7D7AFF;
     letter-spacing: -0.006em;
     font-weight: 600;
+    cursor: pointer;
     box-shadow: 0px 1.40489px 4.21467px rgba(0, 0, 0, 0.08);
 }
 .frontend, .design{
     border:none;
     background: none;
     color: #838D95;
-
+    cursor: pointer;
 }
 </style>
 </head>
@@ -128,14 +129,26 @@ body{
         
         <br>
         <div class="inside">
-            <button class="design">Design</button>
-            <button class="frontend">Frontend</button>
-            <button class="backend">Backend</button>
+            <button id="design" class="design">Design</button>
+            <button id="frontend" class="frontend">Frontend</button>
+            <button id="backend" class="backend">Backend</button>
         </div>
         <script>
             const zuruck = document.getElementById("zuruck")
             const swicth1 = document.getElementById("switch1");
             const swicth2 = document.getElementById("switch2");
+
+            const design = document.getElementById("design");
+            const frontend = document.getElementById("frontend");
+
+            frontend.addEventListener("click", () =>{
+            window.location.href="todo2.html";
+                })
+            design.addEventListener("click", () =>{
+            window.location.href="todo3.html";
+                })
+
+
 
                 zuruck.addEventListener("click", () =>{
             window.location.href="chatbox.html";
